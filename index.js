@@ -3,7 +3,8 @@ const StealthPlugin  = require('puppeteer-extra-plugin-stealth')
 puppeteer.use(StealthPlugin())
 const fs = require('fs')
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
-const hook = new Webhook("https://canary.discord.com/api/webhooks/781976493038239764/ocK-wshUNZsQ3T2AKQybEDTQVTxihUbFMwd-b_q-jYHMturLV4Ve7gzZOSguEuvRBu1Q");
+const webhook = "" //put your webhook here
+const hook = new Webhook(webhook);
 
 const emailstxt = fs.readFileSync("./emails.txt", "utf-8");
 const emails = emailstxt.split("\n")
